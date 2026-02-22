@@ -1,12 +1,12 @@
 :root {
-  --bg-main: #1e293b;          /* Deep Navy for the whole page */
-  --bg-calculator: #1e293b;    /* Slightly lighter for the calculator body */
+  --bg-main: #1e293b;          /* Deep Navy for page */
+  --bg-calculator: #1e293b;    /* Lighter for the calculator body */
   --bg-display: #020617;       /* Very dark for the screen */
   
   /* Button Colors */
   --color-number: #334155;     /* Slate for digits */
-  --color-operator: #f59e0b;   /* Amber for +, -, *, / */
-  --color-equals: #10b981;     /* Emerald for = */
+  --color-operator: #f59e0b;   /* Orange for +, -, *, / */
+  --color-equals: #10b981;     /* Green for = */
   --color-clear: #ef4444;      /* Red for AC */
   
   /* Text Colors */
