@@ -1,0 +1,103 @@
+:root {
+  --bg-main: #1e293b;          /* Deep Navy for the whole page */
+  --bg-calculator: #1e293b;    /* Slightly lighter for the calculator body */
+  --bg-display: #020617;       /* Very dark for the screen */
+  
+  /* Button Colors */
+  --color-number: #334155;     /* Slate for digits */
+  --color-operator: #f59e0b;   /* Amber for +, -, *, / */
+  --color-equals: #10b981;     /* Emerald for = */
+  --color-clear: #ef4444;      /* Red for AC */
+  
+  /* Text Colors */
+  --text-main: #ffffff;
+  --text-secondary: #94a3b8;
+}
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  margin: 0;
+  background-color: var(--bg-main);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.calculator {
+  width: 20rem;
+  background-color: var(--bg-calculator);
+  padding: 1.25rem;
+  border-radius: 1.5rem;
+  box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.4);
+  border: 5px solid rgba(255, 255, 255, 0.1);
+}
+
+.display {
+  background-color: var(--bg-display);
+  color: var(--text-main);
+  padding: 1.5rem;
+  text-align: right;
+  border-radius: 0.75rem;
+  margin-bottom: 1.25rem;
+  min-height: 5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.previous {
+  color: var(--text-secondary);
+  font-size: 1rem;
+  min-height: 1.5rem;
+}
+
+.current {
+  font-size: 2.5rem;
+  font-weight: 700;
+  overflow: hidden;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+}
+
+button {
+  background-color: var(--color-number);
+  color: var(--text-main);
+  border: none;
+  height: 4rem;
+  border-radius: 0.75rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.1s ease, filter 0.2s;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+button:hover {
+  filter: brightness(1.2);
+}
+
+.operator-btn {
+  background-color: var(--color-operator);
+}
+
+.clear-btn {
+  background-color: var(--color-clear);
+}
+
+.equals-btn {
+  background-color: var(--color-equals);
+}
+
+.span-two {
+  grid-column: span 2;
+}
+
+
