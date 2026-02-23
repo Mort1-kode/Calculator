@@ -100,18 +100,23 @@ button:hover {
   grid-column: span 2;
 }
 
-@media (max-width: 400px) {
+@media (max-width: 480px) {
   .calculator {
-    width: 95%; 
+    width: 92%; 
     padding: 1rem;
+    border-radius: 1rem;
+  }
+
+  .keypad {
+    gap: 0.5rem;
   }
 
   button {
-    height: 3.5rem; 
-    font-size: 1.1rem;
+    height: 4.5rem; 
+    font-size: 1.4rem;
   }
 
   .current {
-    font-size: 2rem; 
+    font-size: 3rem; 
 }
 }
