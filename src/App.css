@@ -14,25 +14,33 @@
   --text-secondary: #94a3b8;
 }
 
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
 body {
   font-family: 'JetBrains Mono', monospace;
-  margin: 0;
   background-color: var(--bg-main);
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center; 
+  padding: 20px;
 }
 
 .calculator {
   width: 100%;
-  max-width: 360px;
+  max-width: 380px;
+  min-width: 320px;
   background-color: var(--bg-calculator);
   padding: 1.25rem;
   border-radius: 1.5rem;
+  box-sizing: border-box;
   box-shadow: 0 1.25rem 3.125rem rgba(0, 0, 0, 0.4);
   border: 5px solid rgba(255, 255, 255, 0.1);
-  margin: 10px;
 }
 
 .display {
@@ -40,9 +48,9 @@ body {
   color: var(--text-main);
   padding: 1.5rem;
   text-align: right;
-  border-radius: 0.75rem;
+  border-radius: 1.25rem;
   margin-bottom: 1.25rem;
-  min-height: 5rem;
+  min-height: 8rem;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -55,7 +63,7 @@ body {
 }
 
 .current {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-weight: 700;
   overflow: hidden;
 }
@@ -64,14 +72,16 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 0.75rem;
+  width: 100%;
 }
 
 button {
+  width: 100%;
   background-color: var(--color-number);
   color: var(--text-main);
   border: none;
-  height: 4rem;
-  border-radius: 0.75rem;
+  height: 4.5rem;
+  border-radius: 1rem;
   font-size: 1.2rem;
   font-weight: 600;
   cursor: pointer;
@@ -79,7 +89,7 @@ button {
 }
 
 button:active {
-  transform: scale(0.95);
+  transform: scale(0.92);
 }
 
 button:hover {
@@ -110,11 +120,11 @@ button:hover {
 
 
   button {
-    height: 4.2rem; 
-    font-size: 1.4rem;
+    height: 5rem; 
+    font-size: 1.6rem;
   }
 
   .current {
-    font-size: 3rem; 
+    font-size: 3.5rem; 
 }
 }
